@@ -11,7 +11,6 @@ class BloomFilter:
     def _get_hashes(self, element):
         #SHA-256, MD5 i double hashing tehnika
         indices = []
-        
         #enkodiranje elemnta u bajtove
         hash1_bytes = hashlib.sha256(element.encode('utf-8')).digest()
         hash2_bytes = hashlib.md5(element.encode('utf-8')).digest()
